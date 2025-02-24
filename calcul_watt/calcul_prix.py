@@ -10,10 +10,8 @@ def demander_float(message):
 # fonction principale
 def main(): 
     #pose une question puis récupère le résultat
-    print("Consommation en kW/h : ", end='')
-    kw = demander_float("")
-    print("prix du kw/h en euros : ", end='')
-    prix = demander_float("")
+    kw = demander_float("Consommation en kW/h : ")
+    prix = demander_float("prix du kw/h en euros : ")
     calcul(kw, prix)
 
 # kw et prix sont des paramètres transmis à la fonction calcul()
